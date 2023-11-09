@@ -1,27 +1,58 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"></meta>
-    <link rel="stylesheet" href="styles.css"></link>
+    <meta charset="UTF-8" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
     <form method="post" id="survey-form">
-      <label id="name-label" for="name">Name</label><Input id="name" name="name" type="text" placeholder="Enter your name" required>
-      <label id="email-label" for="email">Email</label><Input id="email" name="name" type="email" placeholder="Enter your email" required>
+      <label id="name-label" for="name">Name</label
+      ><input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      />
+      <label id="email-label" for="email">Email</label
+      ><input
+        id="email"
+        name="name"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label id="number-label" for="number">Age</label
+      ><input
+        id="number"
+        name="number"
+        type="number"
+        min="13"
+        max="120"
+        value="13"
+        placeholder="Enter a number"
+        required
+      />
+      <select id="dropdown" name="dropdown">
+        <option value="">Option 1</option>
+        <option value="1">Option 2</option>
+      </select>
+      <label><input type="radio" name="animal" checked />Dog</label>
+      <label><input type="radio" name="animal" />Cat</label>
+      <label><input type="checkbox" value="1" />Happy</label>
+      <label><input type="checkbox" value="1" />Sad</label>
+      <label><input type="checkbox" value="1" />Angry</label>
+      <label
+        >Give us a feedback<textarea
+          placeholder="Enter your feedback"
+        ></textarea>
+      </label>
+      <input type="submit" id="submit" />
     </form>
-    <label id="number-label" for="number">Age</label><Input id="number" name="number" type="number" min="13" max="120" value="13" placeholder="Enter a number"  required>
-     <select id="dropdown" name="dropdown">
-      <option value="">Option 1</option>
-      <option value="1">Option 2</option>
-    </select>
-    <label><input type="radio" name="animal" checked>Dog</label>
-    <label><input type="radio" name="animal" >Cat</label>
-    </form>
-    <label><input type="checkbox" value="1">Happy</label>
-     <label><input type="checkbox" value="1">Sad</label>
-      <label><input type="checkbox" value="1">Angry</label>
-      <textarea></textarea>
   </body>
 </html>
