@@ -12,7 +12,7 @@
     </p>
     <form method="post" id="survey-form">
       <fieldset>
-        <label class="block" id="name-label" for="name">Name</label
+        <label id="name-label" for="name">Name</label
         ><input
           id="name"
           name="name"
@@ -20,7 +20,7 @@
           placeholder="Enter your name"
           required
         />
-        <label class="block" id="email-label" for="email">Email</label
+        <label id="email-label" for="email">Email</label
         ><input
           id="email"
           name="name"
@@ -42,7 +42,7 @@
       </fieldset>
 
       <fieldset>
-        <label class="block" for="current-role"
+        <label for="current-role"
           >Which option best describes your current role?
           <select id="current-role" name="current-role">
             <option value="">Select current role</option>
@@ -56,43 +56,110 @@
       </fieldset>
       <fieldset>
         <legend>Would you recommend freeCodeCamp to a friend?</legend>
-        <label
+        <label for="recommendation-1"
           ><input
+            class="inline"
             type="radio"
+            id="recommendation-1"
             name="recommendation"
             value="1"
             checked
-          />Definitely</label
+          />
+          Definitely</label
         >
-        <label
-          ><input type="radio" name="recommendation" value="2" />Maybe</label
+        <label for="recommendation-2"
+          ><input
+            class="inline"
+            type="radio"
+            id="recommendation-2"
+            name="recommendation"
+            value="2"
+          />
+          Maybe</label
         >
-        <label
-          ><input type="radio" name="recommendation" value="3" />Not sure</label
+        <label for="recommendation-3e"
+          ><input
+            class="inline"
+            type="radio"
+            id="recommendation-3"
+            name="recommendation"
+            value="3"
+          />
+          Not sure</label
         >
-
-        <label
-          >What is your favorite feature of freeCodeCamp?
-          <select id="favorite-feature" name="dropdown">
-            <option value="">Select an option</option>
-            <option value="1">Challenges</option>
-            <option value="2">Projects</option>
-            <option value="3">Community</option>
-            <option value="4">Open Source</option>
-          </select>
-        </label>
       </fieldset>
       <fieldset>
-        <label><input type="checkbox" value="1" />Front-end Projects</label>
-        <label><input type="checkbox" value="2" />Back-end Projects</label>
-        <label><input type="checkbox" value="3" />Data Visualization</label>
-        <label><input type="checkbox" value="4" />Challenges</label>
-        <label><input type="checkbox" value="5" />Open Source Community</label>
-        <label><input type="checkbox" value="6" />Gitter help rooms</label>
-        <label><input type="checkbox" value="7" />Videos</label>
-        <label><input type="checkbox" value="8" />Wiki</label>
-        <label><input type="checkbox" value="9" />Forum</label>
-        <label><input type="checkbox" value="10" />Additional Courses</label>
+        <legend>What is your favorite feature of freeCodeCamp?</legend>
+        <select id="favorite-feature" name="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>What is your favorite feature of freeCodeCamp?</legend>
+        <label for="cb-1"
+          ><input class="inline" id="cb-1" type="checkbox" value="1" />Front-end
+          Projects</label
+        >
+        <label for="cb-2"
+          ><input class="inline" id="cb-2" type="checkbox" value="2" />Back-end
+          Projects</label
+        >
+        <label for="cb-3"
+          ><input class="inline" id="cb-3" type="checkbox" value="3" />Data
+          Visualization</label
+        >
+        <label for="cb-4"
+          ><input
+            class="inline"
+            id="cb-4"
+            type="checkbox"
+            value="4"
+          />Challenges</label
+        >
+        <label for="cb-5"
+          ><input class="inline" id="cb-5" type="checkbox" value="5" />Open
+          Source Community</label
+        >
+        <label for="cb-6"
+          ><input class="inline" id="cb-6" type="checkbox" value="6" />Gitter
+          help rooms</label
+        >
+        <label for="cb-7"
+          ><input
+            class="inline"
+            id="cb-7"
+            type="checkbox"
+            value="7"
+          />Videos</label
+        >
+        <label for="cb-8"
+          ><input
+            class="inline"
+            id="cb-8"
+            type="checkbox"
+            value="8"
+          />Wiki</label
+        >
+        <label for="cb-9"
+          ><input
+            class="inline"
+            id="cb-9"
+            type="checkbox"
+            value="9"
+          />Forum</label
+        >
+        <label for="cb-10"
+          ><input
+            class="inline"
+            id="cb-10"
+            type="checkbox"
+            value="10"
+          />Additional Courses</label
+        >
       </fieldset>
       <fieldset>
         <label
