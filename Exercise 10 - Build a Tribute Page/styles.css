@@ -1,8 +1,14 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+}
+
 h1 {
   text-align: center;
 }
 
-p {
+p,
+figcaption {
   text-align: center;
 }
 
@@ -20,8 +26,11 @@ p {
 }
 
 #image {
-  width: 100%;
-  margin: 0 0;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  display: block;
 }
 
 h2 {
@@ -30,6 +39,31 @@ h2 {
   margin: 40px auto;
 }
 
+#tribute-info {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  justify-content: center;
+}
+
 li {
-  margin: 20px 8px;
+  text-align: left;
+  margin: 15px 10px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.left {
+  text-align: left;
+  margin: 25px;
+}
+
+#tribute-link:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+#tribute-link {
+  color: grey;
 }
