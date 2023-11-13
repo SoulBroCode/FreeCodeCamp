@@ -23,3 +23,13 @@ p {
   width: 100%;
   margin: 0 0;
 }
+
+h2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 40px auto;
+}
+
+li {
+  margin: 20px 8px;
+}
