@@ -3,19 +3,24 @@ html {
 }
 
 body {
-  display: flex;
+  margin: 0;
 }
 
 nav {
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   margin: 0;
-  width: 150px;
+  width: 300px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
 }
 
 nav header {
-  padding: 8px 5px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 28px;
+  white-space: nowrap;
+  padding: 20px 20px;
+  color: grey;
 }
 
 nav ul {
@@ -23,9 +28,11 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+
 nav ul li {
-  padding: 8px 5px;
+  padding: 10px 20px;
   border-top: solid 1px black;
+  white-space: nowrap;
 }
 
 a {
@@ -35,11 +42,39 @@ a {
 
 main {
   border: 3px solid grey;
-  width: 100%;
-
-  margin: 0 auto;
+  width: calc(100% -300px);
+  margin: 25px auto 25px 300px;
+  padding: 0;
 }
 
 .main-section {
   border: 1px solid black;
+  padding: 0 15px;
+}
+
+.main-section header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main-section p {
+  padding: 0 15px;
+}
+
+.main-section ul li {
+  margin: 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
 }
