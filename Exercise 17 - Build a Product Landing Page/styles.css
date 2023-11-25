@@ -96,7 +96,7 @@ h1 {
 #feature {
   display: grid;
   grid-template-columns: 20% 1fr;
-  gap: 3rem 1.5rem;
+  gap: 4.5rem 1.5rem;
   justify-content: center;
 }
 
@@ -120,6 +120,57 @@ h1 {
 #how-it-works iframe {
   margin: auto;
   display: block;
-  width: 420px;
+  width: 100%;
   height: 315px;
+  max-width: 560;
+}
+
+#pricing {
+  height: 315px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.badge {
+  height: 100%;
+  width: 280px;
+  min-width: 230px;
+  border: 1px solid black;
+}
+
+.badge h1 {
+  font-size: 20px;
+  background: #dddddd;
+  padding: 20px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.badge h2 {
+  font-size: 30px;
+  padding: 17px;
+  text-align: center;
+}
+
+.badge ul {
+  font-size: 15px;
+  list-style: none;
+  text-align: center;
+}
+
+.badge ul li {
+  padding: 5px;
+}
+
+.badge input {
+  display: block;
+  margin: 20px auto 15px auto;
+  width: 100px;
+  height: 35px;
+  background: orange;
+  border: none;
 }
