@@ -79,7 +79,7 @@ nav ul li a {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .project-tile {
@@ -124,8 +124,6 @@ nav ul li a {
 .project-tile p:after {
   opacity: 0;
   animation-name: fadeOutOpacity;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
@@ -134,8 +132,6 @@ nav ul li a {
 .project-tile:hover p:before,
 .project-tile:hover p:after {
   animation-name: fadeInOpacity;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
@@ -144,4 +140,87 @@ nav ul li a {
 .project-image {
   width: 100%;
   height: 85%;
+  object-fit: cover;
+}
+
+#projects input {
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 4.5rem;
+  border: none;
+}
+
+@keyframes ChangeBackgroundToRed {
+  0% {
+    background: black;
+  }
+  100% {
+    background: red;
+  }
+}
+
+#projects input:hover {
+  animation-name: ChangeBackgroundToRed;
+  animation-timing-function: ease-in;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+#profile-link {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+}
+
+#profile-link h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#profile-link p {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+
+#profile-link ul {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  color: white;
+  list-style: none;
+}
+
+#profile-link ul li a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+#footer {
+  border-top: 3px solid red;
+  background: black;
+  height: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#footer p {
+  color: white;
+  font-size: 18px;
+  margin: 1.5rem;
+}
+
+#footer p a {
+  text-decoration: none;
+  color: white;
 }
