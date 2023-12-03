@@ -169,7 +169,7 @@ nav ul li a {
   animation-fill-mode: forwards;
 }
 
-#profile-link {
+#profile-links {
   width: 100%;
   height: 85vh;
   display: flex;
@@ -180,26 +180,52 @@ nav ul li a {
   background: black;
 }
 
-#profile-link h1 {
+#profile-links h1 {
   font-size: 50px;
   color: white;
 }
 
-#profile-link p {
+#profile-links p {
   font-size: 20px;
   font-style: italic;
   color: white;
 }
 
-#profile-link ul {
+@keyframes moveDown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#profile-links ul {
   margin-top: 30px;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   color: white;
   list-style: none;
 }
 
-#profile-link ul li a {
+#profile-links ul li {
+  transition: transform 0.3s ease-out;
+}
+
+#profile-links ul li:hover {
+  transform: translateY(8px);
+}
+
+#profile-link {
   font-size: 25px;
   color: white;
   text-decoration: none;
