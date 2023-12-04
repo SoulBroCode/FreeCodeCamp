@@ -219,6 +219,8 @@ nav ul li a {
 #profile-links ul {
   margin-top: 30px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   color: white;
   list-style: none;
 }
@@ -260,4 +262,7 @@ nav ul li a {
 #footer p a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 720px) {
 }
