@@ -9,11 +9,18 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background: var(--Layout-Color-1);
   display: flex;
   justify-content: flex-end;
   padding: 15px 30px 15px 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 nav ul {
@@ -56,12 +63,13 @@ nav ul li a {
 #projects {
   font-style: underline;
   background: grey;
-  padding: 10px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 #projects h1 {
-  margin: 50px 20px;
+  text-align: center;
+  margin: 0px auto 50px auto;
   font-size: 40px;
   color: white;
 }
@@ -149,7 +157,6 @@ nav ul li a {
   background: black;
   color: white;
   font-size: 16px;
-  margin-bottom: 4.5rem;
   border: none;
 }
 
@@ -212,12 +219,14 @@ nav ul li a {
 #profile-links ul {
   margin-top: 30px;
   display: flex;
-  gap: 25px;
   color: white;
   list-style: none;
 }
 
 #profile-links ul li {
+  display: flex;
+  margin: 20px;
+  align-items: center;
   transition: transform 0.3s ease-out;
 }
 
@@ -226,6 +235,8 @@ nav ul li a {
 }
 
 #profile-link {
+  margin: auto 5px;
+  white-space: nowrap;
   font-size: 25px;
   color: white;
   text-decoration: none;
